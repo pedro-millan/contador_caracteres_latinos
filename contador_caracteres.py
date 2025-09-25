@@ -7,6 +7,14 @@ def eliminar_tildes(texto):
         if unicodedata.category(c) != 'Mn'
     )
 
+def contar_caracteres(texto):
+    texto = eliminar_tildes(texto.lower())
+    dicc = {}
+    for ch in texto:
+        if 'a' <= ch <= 'z':
+            dicc[ch] = dicc.get(ch, 0) + 1
+    return dicc
+
 nombre_archivo = input("Escribe el nombre del archivo de texto a analizar: ")
 #Creamos diccionario ordenando por nº de ocurrencias todos los caracteres del texto:
 try:
