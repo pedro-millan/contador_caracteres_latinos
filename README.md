@@ -21,3 +21,37 @@ Este script realiza un análisis de frecuencia de letras (a-z) en un archivo de 
 - Validación y detección de errores en textos.
 
 - Análisis básico de patrones de texto en entornos de seguridad o criptografía.
+
+
+## 🚀 Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/pedro-millan/contador_caracteres_latinos.git
+   cd contador_caracteres_latinos
+
+2. Crea y activa un entorno virtual:
+   python3 -m venv venv
+   source venv/bin/activate
+
+3. Instala las dependencias:
+   pip install -r requirements.txt
+
+## 🧪 Tests
+
+Este proyecto incluye pruebas unitarias con pytest.
+
+Para ejecutarlas desde la raíz del proyecto:
+	pytest -q
+
+## 📂 Estructura del proyecto
+
+contador_caracteres/
+├── src/
+│   └── main_contador.py
+├── tests/
+│   └── test_contador.py
+├── requirements.txt
+├── pytest.ini
+└── README.md
+
