@@ -1,4 +1,4 @@
-import main_contador as cc
+from src import main_contador as cc
 
 def test_eliminar_tildes():
     assert cc.eliminar_tildes("canción") == "cancion"
